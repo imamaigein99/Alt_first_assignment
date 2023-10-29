@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>KYC Information</h1>
+        <nav>
+            <ul>
+                <li><a href="index_assigment.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <form action="thankyou.html" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br>
+
+                <label for="sex">Sex:</label>
+                <input type="radio" id="male" name="sex" value="male"> Male
+                <input type="radio" id="female" name="sex" value="female"> Female
+                <input type="radio" id="Non-Binary" name="sex" value="Non-Binary"> Non-Binary
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" requiredpattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+       title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one digit.">
+       <br>
+
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="miss">Miss</option>
+                </select>
+                <br>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required><br>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+                <!-- Add other KYC information fields here -->
+
+                <input type="submit" value="Submit">
+            </form >
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Alt school Africa
+    </footer>
+</body>
+</html>
